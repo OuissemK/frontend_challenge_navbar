@@ -1,146 +1,67 @@
- Navbar Challenges
+# Navbar Responsive – Menu Burger & Off-Canvas
 
-A collection of navigation-focused frontend practice projects built with HTML, CSS and JavaScript.
+Un challenge de navigation responsive avec barre latérale en desktop qui se transforme en top bar sur tablette et mobile.
 
-These projects focus on layout restructuring, off-canvas systems, responsive navigation patterns and UI state management.
+Ce projet met l’accent sur la restructuration du layout, l’implémentation d’un menu off-canvas, et la gestion des états UI.
 
-⸻
+---
 
-📂 Projects
+## 📂 Structure du projet
 
-01 – Responsive Burger Navbar (Off-Canvas Menu)
+### 01 — Navigation Off-Canvas
+- Barre latérale fixe (desktop)
+- Transformation en top bar (responsive)
+- Menu burger (états ouvert / fermé)
+- Panneau off-canvas animé
+- Accordéon natif avec `<details>` / `<summary>`
+- Icônes plus / moins via pseudo-éléments
+- Restructuration complète du layout en responsive
 
-A responsive navigation system that transforms:
-	•	Desktop: vertical lateral bar
-	•	Mobile / Tablet: top navigation bar
-	•	Off-canvas sliding menu
-	•	Accordion sub-menus
-	•	Structured CSS architecture
+---
 
-⸻
+## 📱 Comportement Responsive
 
-🔹 Features
-	•	HTML5 semantic structure
-	•	CSS Grid & Flexbox combination
-	•	Lateral navigation (desktop)
-	•	Top bar transformation (responsive ≤1024px)
-	•	Off-canvas sliding panel
-	•	Native <details> / <summary> accordion
-	•	Custom plus/minus icons using pseudo-elements (::before / ::after)
-	•	Design tokens via CSS variables
-	•	Responsive layout logic
-	•	Z-index layering management
-	•	UI states (hover / active / toggle)
-	•	Clean component separation
+- **Desktop**
+  - Barre latérale fixe
+  - Texte vertical (writing-mode)
+  - Icônes en bas
+  - Off-canvas glissant depuis la droite
 
-⸻
+- **Tablette & Mobile (≤1024px)**
+  - La barre latérale devient une top bar
+  - Réorganisation en CSS Grid
+  - Texte horizontal
+  - Off-canvas positionné sous la top bar
 
-📱 Responsive Behavior
-	•	Desktop: Vertical sidebar (88px fixed column)
-	•	Tablet & Mobile: Top bar + horizontal delivery strip
-	•	Off-canvas panel slides under top bar
-	•	Language toggle moves from sidebar to off-canvas
+---
 
-⸻
+## 🎯 Objectifs
 
-🎯 Goals
-	•	Practice advanced layout restructuring
-	•	Master Grid vs Flex usage
-	•	Understand positioning systems (fixed / absolute / stacking context)
-	•	Handle responsive logic transformation
-	•	Build scalable navigation components
-	•	Prepare for JavaScript-driven interactions (future marquee animation)
+- Approfondir CSS Grid
+- Comprendre la restructuration responsive avancée
+- Gérer les états UI en JavaScript
+- Améliorer la logique de positionnement
+- Structurer un composant scalable et propre
 
-⸻
+---
 
-🛠️ Technologies
-	•	HTML5
-	•	CSS3 (Grid, Flexbox, Positioning)
-	•	JavaScript (toggle logic – minimal for this version)
+## 🛠️ Technologies
 
-⸻
+- HTML5
+- CSS3 (Grid, Flexbox, writing-mode)
+- JavaScript (manipulation du DOM)
+- Variables CSS (design tokens)
 
-📌 Notes
+---
 
-This project focuses primarily on layout architecture and responsive restructuring.
+## 🚀 Démo Live
 
-The marquee animation is currently static and will later be implemented in JavaScript.
+🔗 https://ouissemk.github.io/frontend_challenge_navbar/off_canvas/
 
-Each project is self-contained and can be opened directly in the browser.
+---
 
-⸻
+## 📌 Notes
 
-⸻
+Ce projet fait partie d’une série de challenges centrés sur la navigation.
 
-🇫🇷 Défis Navigation (Navbar)
-
-Une collection de projets centrés sur la navigation, réalisés en HTML, CSS et JavaScript.
-
-Ces projets mettent l’accent sur la restructuration responsive, les systèmes off-canvas et la gestion des états UI.
-
-⸻
-
-📂 Projets
-
-01 – Navbar Burger Responsive (Menu Off-Canvas)
-
-Système de navigation responsive qui transforme :
-	•	Desktop : barre latérale verticale
-	•	Mobile / Tablette : barre de navigation horizontale
-	•	Menu off-canvas coulissant
-	•	Sous-menus accordéon
-	•	Architecture CSS structurée
-
-⸻
-
-🔹 Fonctionnalités
-	•	Structure HTML sémantique
-	•	Combinaison CSS Grid & Flexbox
-	•	Navigation latérale fixe (desktop)
-	•	Transformation en top bar en responsive (≤1024px)
-	•	Panneau off-canvas coulissant
-	•	Accordéon natif <details> / <summary>
-	•	Icônes plus/moins via pseudo-éléments (::before / ::after)
-	•	Design tokens via variables CSS
-	•	Gestion des couches (z-index)
-	•	États UI (hover / actif / toggle)
-	•	Séparation claire des composants
-
-⸻
-
-📱 Comportement Responsive
-	•	Desktop : sidebar verticale fixe (88px)
-	•	Tablette & Mobile : top bar + bandeau livraison horizontal
-	•	Off-canvas positionné sous la top bar
-	•	Le bouton langue est déplacé dans le off-canvas en responsive
-
-⸻
-
-🎯 Objectifs
-	•	Travailler la restructuration avancée en responsive
-	•	Maîtriser Grid vs Flexbox
-	•	Comprendre les systèmes de positionnement (fixed / absolute)
-	•	Gérer les contextes d’empilement (z-index)
-	•	Construire un composant de navigation scalable
-	•	Préparer l’intégration JavaScript (animation marquee future)
-
-⸻
-
-🛠️ Technologies
-	•	HTML5
-	•	CSS3 (Grid, Flexbox, Positioning)
-	•	JavaScript (logique toggle minimale)
-
-⸻
-
-📌 Notes
-
-Ce projet est principalement centré sur l’architecture du layout et la transformation responsive.
-
-L’animation du texte (marquee) sera implémentée ultérieurement en JavaScript.
-
-Chaque projet est autonome et peut être ouvert directement dans un navigateur.
-
-## 🚀 Live Demo
-
-🔗 https://ouissemk.github.io/frontend-challenge-navbar/off_canvas/
+L’animation type "marquee" sera améliorée ultérieurement en JavaScript.
