@@ -54,12 +54,6 @@ This project focuses on layout restructuring, off-canvas interaction, responsive
 
 ---
 
-## 🚀 Live Demo
-
-🔗 https://ouissemk.github.io/frontend-challenge-navbar/off_canvas/
-
----
-
 ## 📌 Notes
 
 This project is part of my navigation-focused frontend challenge series.
@@ -67,6 +61,8 @@ This project is part of my navigation-focused frontend challenge series.
 The marquee animation will be refined later using JavaScript.
 
 ---
+
+
 
 # Navbar Responsive – Menu Burger & Off-Canvas
 
@@ -124,14 +120,14 @@ Ce projet met l’accent sur la restructuration du layout, l’implémentation d
 
 ---
 
-## 🚀 Démo Live
-
-🔗 https://ouissemk.github.io/frontend_challenge_navbar/off_canvas/
-
----
-
 ## 📌 Notes
 
 Ce projet fait partie d’une série de challenges centrés sur la navigation.
 
 L’animation type "marquee" sera améliorée ultérieurement en JavaScript.
+
+---
+
+## 🚀 Démo Live
+
+🔗 https://ouissemk.github.io/frontend_challenge_navbar/off_canvas/
