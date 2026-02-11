@@ -1,0 +1,128 @@
+/* ========================= Lateral Bar ========================= */
+/* Fixed permet de garder la barre visible lors du scroll */
+.lateral-bar{
+    max-width: 88px;
+    width: 100%;
+    min-height: 100vh;
+
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    padding-block: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-primary);
+}
+
+/* ========================= Toggle Open/ Close ========================= */
+.menu-toggle{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Mettre display Block sur un svg afin de supprimer l'espacement crée par celui-ci  */
+.icon__buger{
+    display: block;
+}
+/* Mettre display none afin de ne pas le faire apparaitre */
+.icon__close{
+    display: none;
+}
+
+/* Etat du Toggle lors de l'ouverture et de la fermeture de celui-ci */
+/* !.is-open indication d'état pour le JS */
+.menu-toggle.is-open .icon__buger{
+    display:none;
+}
+.menu-toggle.is-open .icon__close{
+    display:block;
+}
+
+/* ========================= Delivery Text ========================= */
+/* writing-mode permet de mettre le texte en vertical de droite à gauche ou de gauche à droite */
+.delivery{
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-rl;
+}
+.delivery__content{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+.delivery__content p{
+    color: var(--color-secondary);
+
+    font-family: var(--font-primary) ;
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+}
+
+.delivery__content:nth-child(n+2){
+    display: none;
+}
+
+/* ========================= Icons Shopping bag/ User account/ Language ========================= */
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ! Toujours mettre une zone cliquable via width & height pour les links avec icones */
+.icons a{
+    color: var(--color-secondary);
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+/* ! Mettre les transitions dans l éléments intiale masi les transform peuvent etre dans l'éléments initial & dans dans un élément Hover */
+.icons a svg{
+    transform: scale(1);
+    transition: transform 320ms ease-in-out;
+}
+.icons a:hover svg{
+    transform: scale(1.15);
+}
+
+/* Dans un Button si on ne veut pas de bg-color = transparent et border = none pour le supprimer   */
+.toggle-lang{
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-secondary-strong);
+    line-height: var(--line-height-medium);
+
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: transform 320ms ease-in-out;
+}
+.toggle-lang:hover{
+    transform: scale(1.15);
+}
+.test{
+    width: 100%;
+    height: 100vh;
+
+    background-color:var(--color-secondary);
+}

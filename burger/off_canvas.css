@@ -1,0 +1,308 @@
+/* ========================= Off Canvas Panel ========================= */
+
+/* --- Off Canvas Panel--- */
+.off-canvas{
+    min-width: 400px;
+    height: 100vh;
+    padding-block: 65px;
+
+    background-color: var(--color-primary);
+    border-right: var(--border-width-regular) var(--color-hover);
+
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    right: 88px;
+
+    transform: translateX(100%);
+    transition: transform 450ms;
+
+    overflow-y: auto;
+    scrollbar-width: thin; /* (Firefox only) */
+}
+
+/* Default: hidden (translateX(100%)) | Open: translateX(0) */
+.off-canvas.is-open{
+    transform: translateX(0%);
+}
+
+/* Section 1ere partie de la Nav Bar */
+.shop{
+    padding-bottom: 100px;
+    padding-inline-start: 32px;
+}
+.title__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2{
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-medium) ;
+    font-weight: var(--font-weight-regular) ;
+    letter-spacing: var(--letter-spacing-secondary);
+}
+.toggle__lang-canvas{
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-secondary-strong);
+    line-height: var(--line-height-medium);
+
+    cursor: pointer;
+    display: none;
+}
+
+/* To delete the natives spacing in ul */
+.shop-nav__item{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.shop-nav__item a{
+    display: block;
+    padding: 4px 0;
+
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-family: var(--font-primary) ;
+    font-size: var(--font-size-regular) ;
+    font-weight: var(--font-weight-regular) ;
+    letter-spacing: var(--letter-spacing-secondary);
+
+    cursor: pointer;
+}
+.shop-nav__item a:hover{
+    color: var(--color-hover);
+}
+
+/* --- Infos Section--- */
+.infos-nav__item{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-bottom: 80px;
+}
+.infos-nav__item a{
+    display: block;
+    padding: 8px 0;
+    padding-inline-start: 32px;
+
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-medium) ;
+    font-weight: var(--font-weight-regular) ;
+    letter-spacing: var(--letter-spacing-secondary);
+
+    border-top: var(--border-width-regular) var(--color-hover);
+
+    cursor: pointer;
+}
+.infos-nav__item a:hover{
+    color: var(--color-hover);
+}
+
+/* Accordion Menu Part */
+summary{
+    position: relative;
+    padding: 8px 32px;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--color-secondary);
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-medium) ;
+    font-weight: var(--font-weight-regular) ;
+    letter-spacing: var(--letter-spacing-secondary);
+
+    border-top: var(--border-width-regular) var(--color-hover);
+}
+/* Plus/minus icon (pure CSS) */
+summary::before{
+    content: "";
+    position: absolute;
+    background-color: currentColor;
+
+    top: 50%;
+    right: 16px;
+    width: 14px;
+    height: 1px;
+
+    transform: translateY(-50%);
+}
+summary::after{
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    right: 22px;
+    transform: translateY(-50%);
+
+    width: 1px;
+    height: 14px;
+    background-color: currentColor;
+
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+summary:hover{
+    color: var(--color-hover);
+}
+.infos-nav__item details a:hover{
+    color: var(--color-hover);
+}
+
+/* Details Part */
+/* Animation of the details parts for the icon */
+details[open] summary::after{
+    transform: translateY(-50%) scaleY(0);
+    opacity: 0;
+}
+details ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.infos-nav__item details a{
+    border: none;
+    padding: 8px 32px;
+
+    font-family: var(--font-primary) ;
+    font-size: var(--font-size-small) ;
+    font-weight: var(--font-weight-regular) ;
+
+    letter-spacing: var(--letter-spacing-secondary);
+    line-height: var(--line-height-small);
+}
+/* Margin bottom for the last child of the ul details */
+details > ul{
+    margin-bottom: 16px;
+}
+
+/* Product Card */
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ebe9e6;
+    position: relative;
+
+    width: 393px;
+    height: 487px;
+    margin-inline: 32px;
+}
+.product:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: scale(1);
+    transition: opacity 300ms ease, transform 450ms ease, visibility 0s;
+}
+
+/* Inset 24px to leave spaces for the overlay */
+.overlay{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+
+    padding: 16px;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transform: scale(0.90);
+    transition: opacity 300ms ease, transform 450ms ease, visibility 0s linear 450ms;
+
+    position: absolute;
+    inset: 24px;
+    z-index: 20;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-xlarge) ;
+    font-weight: var(--font-weight-regular) ;
+    letter-spacing: var(--letter-spacing-secondary);
+    line-height: var(--line-height-xsmall);
+}
+/* Full clickable layer above the overlay content */
+.overlay__link{
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+}
+/* Keep content above overlay background, under the link layer */
+.overlay > *:not(.overlay__link) {
+    position: relative;
+    z-index: 2;
+}
+
+.info__product{
+    color: var(--color-primary);
+
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-small) ;
+    font-weight: var(--font-weight-regular) ;
+    letter-spacing: var(--letter-spacing-secondary);
+}
+.product__img{
+    max-width: 314px;
+    width: 100%;
+    height: 314px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.name{
+    color: var(--color-primary);
+    font-family: var(--font-secondary) ;
+    font-size: var(--font-size-large) ;
+    font-weight: var(--font-weight-regular) ;
+
+    letter-spacing: var(--letter-spacing-secondary);
+}
+.price{
+    color: var(--color-primary);
+    font-family: var(--font-primary) ;
+    font-size: var(--font-size-regular) ;
+    font-weight: var(--font-weight-regular) ;
+
+    letter-spacing: var(--letter-spacing-secondary);
+}
+
+.product__meta{
+    position: absolute;
+    bottom: 25%;
+    z-index: 10;
+
+    max-width: 314px ;
+    width: 100%;
+    padding-inline: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--color-primary);
+}
+.meta__info{
+    padding-left: 40px;
+}
+

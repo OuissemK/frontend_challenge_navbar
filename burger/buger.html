@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Description SEO -->
+     <meta name="description" content="Frontend UI challenge focused on building a responsive burger navigation with off-canvas menu, subtle animations and accordion sub-menus, inspired by modern editorial websites.">
+
+    <!-- Meta Theme Color -->
+     <meta name="theme-color" content="#363636">
+
+    <!-- Links Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Links CSS -->
+     <link rel="stylesheet" href="./token_navbar.css">
+     <link rel="stylesheet" href="./base.css">
+     <link rel="stylesheet" href="./lateral-bar.css">
+     <link rel="stylesheet" href="./off_canvas.css">
+     <link rel="stylesheet" href="./responsive.css">
+
+    <title>Responsive Burger Navbar</title>
+</head>
+<body>
+<!-- Hero -->
+    <div class="layout">
+        <main class="page">
+            <div class="logo">
+                <a href="#" aria-label="Retour à l’accueil – Cîme Noire Café">
+                <h1>Cîme Noire</h1>
+                <span class="h1">Café</span>
+                </a>
+            </div>
+<!-- Background Video Section Hero -->
+            <video class="bg_video" autoplay muted loop playsinline>
+                <source src="/burger/image/bg_video.mp4" type="video/mp4">
+            </video>
+        </main>
+<!-- Header -->
+        <header class="wrapper-lateral-bar">
+<!-- Lateral Nab bar -->
+                <div class="lateral-bar">
+                    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="off-canvas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon__buger" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"  class="icon__close" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+<!-- Text block -->
+                <div class="delivery">
+                    <div class="delivery__viewport">
+                        <div class="delivery__track">
+                            <div class="delivery__content">
+                                <p>Livraison Gratuite</p>
+                                <p>Québec & Montréal | 35$ | Canada 55$ | <br> USA - Suspendue temporairement</p>
+                            </div>
+                            <div class="delivery__content">
+                                <p>Livraison Gratuite</p>
+                                <p>Québec & Montréal | 35$ | Canada 55$ | <br> USA - Suspendue temporairement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Icons block -->
+                <div class="icons">
+                    <a href="#" aria-label="Shopping cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-cart"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>
+                    </a>
+                    <a href="#" aria-label="User account">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-user"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+                    </a>
+                    <button class="toggle-lang" type="button" aria-label="Change language" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+<!-- Off Canvas Panel -->
+    <aside class="off-canvas" aria-hidden="true">
+        <nav class="lateral-nav" id="lateral-nav" aria-label="Main menu">
+<!-- Main Menu -->
+            <section class="shop">
+                <div class="title__wrapper">
+                    <h2>Magazin</h2>
+                    <button class="toggle__lang-canvas" type="button" aria-label="Change language" aria-hidden="true" aria-pressed="false">EN</button>
+                </div>
+
+                    <ul class="shop-nav__item">
+                        <li><a href="#">Tous nos produits</a></li>
+                        <li><a href="#">Tous les cafés</a></li>
+                        <li><a href="#">Carte-cadeau</a></li>
+                        <li><a href="#">Boîtes</a></li>
+                        <li><a href="#">Truc cool</a></li>
+                    </ul>
+            </section>
+<!-- Second Menu -->
+            <div class="infos">
+                    <ul class="infos-nav__item">
+                        <li><a href="#">À propos d'escape</a></li>
+                        <li><a href="#">Abonnement</a></li>
+                        <li><a href="#">Producteurs</a></li>
+<!-- Accordion Sub Menu -->
+                        <li>
+                            <details>
+                                <summary>Nos produits</summary>
+                                <ul>
+                                    <li><a href="#">Collection Limitée</a></li>
+                                    <li><a href="#">Collection Éclat</a></li>
+                                    <li><a href="#">Collection Réconfort</a></li>
+                                    <li><a href="#">Collection Foncée</a></li>
+                                    <li><a href="#">Flashbrew</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Commercial</summary>
+                                <ul>
+                                    <li><a href="#">Équipement et service conseil</a></li>
+                                    <li><a href="#">Vendez les produits Escape</a></li>
+                                    <li><a href="#">Formulaire pour compte commercial</a></li>
+                                    <li><a href="#">Catalogue commercial</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+<!-- Overlay Links Product -->
+                <div class="product">
+                        <img class="product__img" src="/burger/image/café_package.png" alt="">
+                    <div class="product__meta">
+                        <span class="name">ALto Nube</span>
+                        <span class="price">€22,95</span>
+                    </div>
+<!-- Overlay -->
+                    <div class="overlay">
+                        <a href="#" class="overlay__link" aria-label="Voir le produit Alto Nube"></a>
+                            Caramel,<br>Pomelo<br>Framboise<br>fraiche du<br>Québec
+                            <table class="info__product">
+                                <tbody>
+                                    <tr>
+                                        <td class="meta__title">Type:</td>
+                                        <td class="meta__info">Origine unique</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="meta__title">Origine:</td>
+                                        <td class="meta__info">Colombie</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="meta__title">Processus:</td>
+                                        <td class="meta__info">Lavée</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </aside>
+    <div class="test">
+
+    </div>
+<!-- Js Script -->
+    <script src="./burger.js" defer></script>
+</body>
+</html>
+
