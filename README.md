@@ -1,4 +1,5 @@
-🇬🇧 # Responsive Burger Navbar
+🇬🇧 
+# Responsive Burger Navbar
 
 A modern responsive navigation challenge featuring a lateral sidebar transforming into a top navigation bar on tablet and mobile.
 
@@ -60,11 +61,15 @@ This project is part of my navigation-focused frontend challenge series.
 
 The marquee animation will be refined later using JavaScript.
 
----
 
 
 
-🇫🇷 # Navbar Responsive – Menu Burger & Off-Canvas
+
+
+
+
+🇫🇷
+ # Navbar Responsive – Menu Burger & Off-Canvas
 
 Un challenge de navigation responsive avec barre latérale en desktop qui se transforme en top bar sur tablette et mobile.
 
