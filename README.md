@@ -140,3 +140,7 @@ Ce projet est principalement centré sur l’architecture du layout et la transf
 L’animation du texte (marquee) sera implémentée ultérieurement en JavaScript.
 
 Chaque projet est autonome et peut être ouvert directement dans un navigateur.
+
+## 🚀 Live Demo
+
+🔗 https://ouissemk.github.io/frontend-challenge-navbar/off_canvas/
