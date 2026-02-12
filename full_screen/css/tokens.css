@@ -1,0 +1,66 @@
+:root{
+/* ========================================================================================== */
+/*                                        Tokens Full Screen Nav Bar                          */
+/* ========================================================================================== */
+
+/* ========================= COLORS ========================= */
+
+    --color-bg: #a3a39b ;
+    --color-text: #151515 ;
+
+    --color-bg-hover: #151515;
+    --color-text-hover: #a3a39b ;
+
+/* ========================= FONTS ========================= */
+
+    --font-primary: "Cormorant", serif;
+    --font-secondary: "Manrope", sans-serif;
+    --font-accent: "Caveat", cursive;
+
+/* ========================= FONTS SIZES ========================= */
+
+    --fs-xlarge: clamp(3.5rem, 6vw, 7rem); /* ~ 56px → 112px */
+    --fs-large: clamp(3rem, 6vw, 6rem); /* 24px → 28px */
+    --fs-medium: clamp(1rem, 1.4vw, 1.25rem); /* 18px → 22px */
+    --fs-regular: clamp(0.875rem, 1.1vw, 1rem); /* 14px → 16px */
+    --fs-small: clamp(0.75rem, 0.9vw, 0.975rem); /* 12px → 14px */
+
+/* ========================= FONTS WEIGHTS ========================= */
+
+    --fw-xl:800;
+    --fw-l: 700;
+    --fw-m: 500;
+    --fw-r: 400;
+    --fw-s: 300;
+
+/* ========================= LINE-HEIGHT ========================= */
+
+    --lh-medium: 1.3;
+    --lh-regular: 1.05;
+    --lh-small: 0.85;
+
+/* ========================= LETTER-SPACING ========================= */
+
+        /* Cormorant */
+    --ls-cormorant-tight: 0.01em;
+    --ls-cormorant-default: 0.02em;
+
+        /* Manrope */
+    --ls-manrope-default: 0.08em;
+    --ls-manrope-strong: 0.12em;
+
+        /* Caveat */
+    --ls-caveat-default: 0.02em; /* Using for handwriting */
+
+/* ========================= SPACE ========================= */
+
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+
+/* ========================= BORDER STYLE========================= */
+
+    --border: 1px dashed currentColor;
+
+}
