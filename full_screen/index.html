@@ -17,19 +17,173 @@
 
 <!-- Links CSS -->
     <link rel="stylesheet" href="./css/tokens.css">
+    <link rel="stylesheet" href="./css/hero_section.css">
     <link rel="stylesheet" href="./css/full_screen.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
     <title>Responsive Fullscreen Navbar with Hover Effects</title>
 </head>
 <body>
+
+    <section class="hero">
 <!-- NavBar -->
-    <header class="navbar">
-        <div class="logo"></div>
-        <button type="button" class="menu-toggle" aria-expanded="false" aria-pressed="false" aria-controls="main-menu">
-            <span>+</span>
-            <span>Menu</span>
-        </button>
-    </header>
+        <header class="navbar">
+            <a href="/" class="logo">
+                <span>||</span>
+            </a>
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-pressed="false" aria-controls="main-menu">
+                <span class="menu__toggle-icon">+</span>
+                <span class="menu__toggle-name">Menu</span>
+            </button>
+        </header>
+        <div class="hero-wrapper">
+            <video class="bg-video" src="/full_screen/assets/night_trafic.webm" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+            <div class="website-name">
+                <h1>Nox Studio</h1>
+                <p class="baseline">Production visuelle • direction créative</p>
+        </div>
+            <div class="marquee">
+                <div class="marquee__viewport">
+                    <div class="marquee__track">
+                        <div class="marquee__content">
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/yuca_outdoor.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Yuca</h2>
+                                    <p class="content__baseline">Outdoor Clothings</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/core_training.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Core</h2>
+                                    <p class="content__baseline">Physical Training</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/around-the_world.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Around the world</h2>
+                                    <p class="content__baseline">Global Perspectives</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/the_deep_blue.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">The deep blue</h2>
+                                    <p class="content__baseline">Beyond the Surface</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/velocity.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Vélocity</h2>
+                                    <p class="content__baseline">Speed & Precision</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/motion.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Motion</h2>
+                                    <p class="content__baseline">Urban mouvement</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/swell.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Swell</h2>
+                                    <p class="content__baseline">Riding the Waves</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/into_the_wild_green.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Canopy</h2>
+                                    <p class="content__baseline">Into the wild green</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/off_piste.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Whiteout</h2>
+                                    <p class="content__baseline">Off-Piste freedom</p>
+                                </div>
+                            </a>
+                        </div>
+    <!-- Second Marquee Block -->
+        <div class="marquee__content">
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/yuca_outdoor.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Yuca</h2>
+                                    <p class="content__baseline">Outdoor Clothings</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/core_training.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Core</h2>
+                                    <p class="content__baseline">Physical Training</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/around-the_world.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Around the world</h2>
+                                    <p class="content__baseline">Global Perspectives</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/the_deep_blue.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">The deep blue</h2>
+                                    <p class="content__baseline">Beyond the Surface</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/velocity.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Vélocity</h2>
+                                    <p class="content__baseline">Speed & Precision</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/motion.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Motion</h2>
+                                    <p class="content__baseline">Urban mouvement</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/swell.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Swell</h2>
+                                    <p class="content__baseline">Riding the Waves</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/into_the_wild_green.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Canopy</h2>
+                                    <p class="content__baseline">Into the wild green</p>
+                                </div>
+                            </a>
+                            <a class="content__items" href="#">
+                                <video src="/full_screen/assets/off_piste.webm" class="content_video" autoplay muted loop playsinline aria-hidden="true" preload="metadata"></video>
+                                <div class="content__infos">
+                                    <h2 class="content__title">Whiteout</h2>
+                                    <p class="content__baseline">Off-Piste freedom</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__copyright">
+                <span>2026 ©</span>
+            </div>
+        </div>
+    </section>
 
 <!-- Section Main Menu -->
     <section class="main-menu" id="main-menu">
@@ -39,39 +193,68 @@
                 <span>/</span>
                 <button type="button" class="toggle__lang">En</button>
             </div>
-            <p class="brand">Freshman</p>
+            <a href="/" class="brand">
+                <span>Nox Studio</span>
+            </a>
             <button type="button" class="close__toggle">
-                <span>x</span>
+                <span class="close__toggle-icon">x</span>
                 <span>Fermer</span>
             </button>
         </div>
-
 <!-- Main Menu Nav -->
-        <nav class="main__menu">
+        <nav class="menu-canvas">
             <ul class="nav__items">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Projet <span class="nav__count">(39)</span></a></li>
-                <li><a href="#">Réalisateurs•trices <span class="nav__count">(12)</span></a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">À la une <span class="nav__count">(11)</span></a></li>
-                <li><a href="#">Nous contacter</a></li>
+                <li class="menu__item">
+                    <div class="menu__row menu__row-col-1">
+                        <a href="#" class="menu__link">Accueil</a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__row menu__row-col-2">
+                        <a href="#" class="menu__link">Projet <span class="nav__count">(39)</span></a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__row menu__row-col-3">
+                        <a href="#" class="menu__link">Réalisateurs•trices <span class="nav__count">(12)</span></a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__row menu__row-col-4">
+                        <a href="#" class="menu__link">À propos</a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__row menu__row-col-5">
+                        <a href="#" class="menu__link">À la une <span class="nav__count">(11)</span></a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__row menu__row-col-6">
+                        <a href="#" class="menu__link">Nous contacter</a>
+                    </div>
+                </li>
             </ul>
-            <div class="footer__main-menu">
+        </nav>
+        <div class="footer__main-menu">
                 <ul class="footer__items-left">
-                    <li><a href="#">
-                        <span>(confidentialité)</span>
-                        <span>Politique de confidentialité</span>
-                    </a></li>
+                    <li>
+                        <a href="#">
+                            <span class="footer__meta">(confidentialité)</span>
+                            <span class="footer__link">Politique de confidentialité</span>
+                        </a>
+                    </li>
                 </ul>
-                <span class="copyright">2026© Le vrai l'emporte toujours</span>
+                <span class="footer__copyright">2026©</span>
                 <ul class="footer__items-right">
-                    <li><a href="#">
-                        <span>(conditions)</span>
-                        <span>Conditions</span>
-                    </a></li>
+                    <li>
+                        <a href="#">
+                            <span class="footer__meta">(conditions)</span>
+                            <span class="footer__link">Conditions</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </nav>
     </section>
 
 <!-- Js Script -->

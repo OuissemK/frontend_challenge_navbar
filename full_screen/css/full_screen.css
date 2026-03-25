@@ -1,6 +1,193 @@
-body{
-    margin: 0;
+/* ========================================================================================== */
+/*                                        SECTION MAIN MENU                                   */
+/* ========================================================================================== */
+
+/* ========================= Section ========================= */
+.main-menu{
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto ;
+
+    background-color: var(--color-bg);
+
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
-*,*::before, *::after{
-    box-sizing: border-box;
+.main-menu.is-open{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.wrapper__main-menu { grid-row: 1;}
+.menu-canvas       { grid-row: 2;}
+.footer__main-menu { grid-row: 3;}
+
+/* ========================= Wrapper Main Menu ========================= */
+.wrapper__main-menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 40px;
+}
+
+.toggle__lang,
+.close__toggle{
+    border: none;
+    background-color: transparent;
+
+    font-family: var(--font-primary) ;
+    font-size: var(--fs-m) ;
+    font-weight: var(--fw-r) ;
+
+    cursor: pointer;
+}
+
+.brand{
+    font-family: var(--font-accent);
+    font-size: var(--fs-l);
+    font-weight: var(--fw-xl);
+
+    letter-spacing: -0.02em;
+
+    text-decoration: none;
+
+    color: var(--color-text);
+}
+
+.close__toggle-icon{
+    font-family: var(--font-accent) ;
+    font-size: var(--fs-m) ;
+    font-weight: var(--fw-r)
+}
+
+/* ========================= Main Menu Nav ========================= */
+.nav__items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu__item{
+    border-top: var(--border-primary);
+    transition: border-top-color 0.3s ease;
+}
+.menu__item:hover{
+    border-top-color: transparent;
+}
+
+.menu__item:hover + .menu__item{
+    border-top-color: transparent;
+}
+
+.menu__item:hover .menu__row{
+    background-color: var(--color-bg-hover);
+}
+
+.menu__item:hover .menu__link{
+    color: var(--color-text-hover);
+}
+
+.menu__item:last-child{
+    border-bottom: var(--border-primary);
+}
+.menu__item:last-child:hover{
+    border-bottom-color: transparent;
+}
+.menu__row{
+    display: flex;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu__link{
+    color: var(--color-text);
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-family: var(--font-primary);
+    font-size: var(--fs-l);
+    font-weight: var(--fw-r);
+
+    transition: color 0.3s ease;
+}
+
+.nav__count{
+    vertical-align: super;
+
+    font-family: var(--font-accent);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-r);
+}
+
+.menu__row-col-1,
+.menu__row-col-5{
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+.menu__row-col-2{
+    padding-left: 20% ;
+}
+.menu__row-col-3{
+    justify-content: center;
+}
+.menu__row-col-4{
+    padding-left: 60%;
+}
+.menu__row-col-6{
+    justify-content: center;
+}
+/* ========================================================================================== */
+/*                                        Footer Menu                                         */
+/* ========================================================================================== */
+
+.footer__main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+}
+
+.footer__meta{
+    font-family: var(--font-accent);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-r);
+}
+
+.footer__link{
+    font-family: var(--font-secondary);
+    font-size: var(--fs-r);
+    font-weight: var(--fw-m);
+}
+
+.footer__items-left,
+.footer__items-right{
+    list-style: none;
+}
+
+.footer__main-menu a {
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.footer__copyright{
+    font-family: var(--font-accent);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-r);
 }
