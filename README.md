@@ -1,4 +1,4 @@
-🇬🇧 
+🇬🇧
 # Responsive Burger Navbar
 
 A modern responsive navigation challenge featuring a lateral sidebar transforming into a top navigation bar on tablet and mobile.
@@ -60,12 +60,6 @@ This project focuses on layout restructuring, off-canvas interaction, responsive
 This project is part of my navigation-focused frontend challenge series.
 
 The marquee animation will be refined later using JavaScript.
-
-
-
-
-
-
 
 
 🇫🇷
@@ -136,3 +130,160 @@ L’animation type "marquee" sera améliorée ultérieurement en JavaScript.
 ## 🚀 Démo Live
 
 🔗 https://ouissemk.github.io/frontend_challenge_navbar/off_canvas/
+
+⸻
+
+
+## Fullscreen Navigation Menu — Hero + Marquee
+
+A modern fullscreen navigation experience featuring a cinematic hero section with background video, an animated marquee, and a sliding fullscreen menu.
+
+This project focuses on layout composition, animation systems, DOM interaction, and clean UI architecture.
+
+⸻
+
+## 📂 Project Structure
+
+01 — Hero Section
+	•	Fullscreen video background (object-fit: cover)
+	•	Centered branding (title + baseline)
+	•	Absolute positioning system
+	•	Layered UI (z-index management)
+
+02 — Marquee Animation
+	•	Continuous horizontal scrolling content
+	•	Infinite loop using duplicated content
+	•	Hover interaction (pause animation)
+	•	Responsive inline layout
+
+03 — Fullscreen Menu
+	•	Hidden off-canvas menu (top overlay)
+	•	Smooth open / close transition
+	•	Toggle system using JavaScript (classList)
+	•	Pointer-events & visibility management
+	•	Accessible button structure (ARIA attributes)
+
+⸻
+
+## 📱 Responsive Behavior
+
+(To be implemented)
+	•	Desktop
+	•	Fullscreen immersive hero layout
+	•	Large typography and spacing
+	•	Wide marquee with multiple items
+	•	Tablet & Mobile
+	•	Adjusted hero composition (more compact layout)
+	•	Repositioned central content (title & baseline)
+	•	Reduced marquee size and spacing
+	•	Optimized touch interaction
+	•	Improved vertical rhythm and spacing
+
+⸻
+
+## 🎯 Objectives
+	•	Build a fullscreen immersive layout
+	•	Practice advanced positioning (absolute / relative)
+	•	Implement animation systems (CSS keyframes)
+	•	Handle UI states with JavaScript
+	•	Improve component structure and scalability
+	•	Prepare for responsive layout adaptation
+
+⸻
+
+## 🛠️ Technologies
+	•	HTML5
+	•	CSS3 (Flexbox, positioning, animations)
+	•	JavaScript (DOM manipulation)
+	•	CSS variables (design tokens)
+
+⸻
+
+## 📌 Notes
+
+This project is part of my navigation-focused frontend challenge series.
+
+The responsive version will be implemented as a next step to refine layout behavior across devices.
+
+⸻
+
+
+🇫🇷
+
+## Navigation Fullscreen — Hero & Marquee
+
+Une expérience de navigation fullscreen moderne avec une section hero immersive en vidéo, un marquee animé et un menu fullscreen en overlay.
+
+Ce projet met l’accent sur la composition du layout, les animations, l’interaction DOM et une architecture UI propre.
+
+⸻
+
+## 📂 Structure du projet
+
+01 — Section Hero
+	•	Vidéo fullscreen (object-fit: cover)
+	•	Branding centré (titre + baseline)
+	•	Système de positionnement absolu
+	•	Gestion des couches (z-index)
+
+02 — Animation Marquee
+	•	Défilement horizontal continu
+	•	Boucle infinie via duplication du contenu
+	•	Pause au hover
+	•	Layout inline responsive
+
+03 — Menu Fullscreen
+	•	Menu caché en overlay (off-canvas vertical)
+	•	Animation fluide ouverture / fermeture
+	•	Gestion via JavaScript (classList)
+	•	Gestion visibility + pointer-events
+	•	Structure accessible (ARIA)
+
+⸻
+
+## 📱 Comportement Responsive
+
+(À venir)
+	•	Desktop
+	•	Hero fullscreen immersif
+	•	Typographies larges
+	•	Marquee étendu
+	•	Tablette & Mobile
+	•	Composition plus compacte
+	•	Repositionnement du contenu central
+	•	Réduction des tailles du marquee
+	•	Optimisation tactile
+	•	Meilleure gestion des espacements verticaux
+
+⸻
+
+## 🎯 Objectifs
+	•	Créer un layout fullscreen immersif
+	•	Maîtriser le positionnement avancé
+	•	Implémenter des animations CSS
+	•	Gérer les états UI en JavaScript
+	•	Structurer un composant scalable
+	•	Préparer l’adaptation responsive
+
+⸻
+
+## 🛠️ Technologies
+	•	HTML5
+	•	CSS3 (Flexbox, positioning, animations)
+	•	JavaScript (manipulation du DOM)
+	•	Variables CSS (design tokens)
+
+⸻
+
+## 📌 Notes
+
+Ce projet fait partie d’une série de challenges autour de la navigation.
+
+La version responsive sera implémentée prochainement afin d’optimiser l’expérience sur mobile.
+
+⸻
+
+## 🚀 Démo Live
+
+🔗 https://ouissemk.github.io/frontend_challenge_navbar/full_screen/
+
