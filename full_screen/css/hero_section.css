@@ -101,7 +101,7 @@ h1{
     font-weight: var(--fw-r);
 
     text-transform: uppercase;
-    letter-spacing: var(--ls-caveat-default);
+    letter-spacing: var(--ls-cormorant-wide);
     line-height: var(--lh-regular);
 
     color: var(--color-text-secondary);

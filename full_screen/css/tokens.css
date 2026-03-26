@@ -5,13 +5,13 @@
 
 /* ========================= COLORS ========================= */
 
-    --color-bg: #a3a39b ;
+    --color-bg: #fafafa ;
     --color-text-primary: #151515 ;
     --color-text-secondary: #fafafa ;
 
 
     --color-bg-hover: #151515;
-    --color-text-hover: #a3a39b ;
+    --color-text-hover: #fafafa ;
 
     --color-neutral-p: #fafafa;
     --color-neutral-s: #000;
@@ -49,11 +49,12 @@
 /* ========================= LETTER-SPACING ========================= */
 
         /* Cormorant */
-    --ls-cormorant-tight: 0.01em;
+    --ls-cormorant-wide: 0.09em;
     --ls-cormorant-default: 0.02em;
+    --ls-cormorant-tight: 0.01em;
 
         /* Manrope */
-    r: 0.08em;
+    --ls-manrope-default: 0.08em;
     --ls-manrope-strong: 0.12em;
 
         /* Caveat */
@@ -69,7 +70,7 @@
 
 /* ========================= BORDER STYLE========================= */
 
-    --border-primary: 1px dashed currentColor;
+    --border-primary : 1px dashed currentColor;
     --border-secondary: 1px dashed #fafafa;
 
 }
