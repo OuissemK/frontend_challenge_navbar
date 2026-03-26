@@ -196,6 +196,7 @@ This project focuses on layout composition, animation systems, DOM interaction, 
 	•	CSS3 (Flexbox, positioning, animations)
 	•	JavaScript (DOM manipulation)
 	•	CSS variables (design tokens)
+  • Optimized video formats (WebM + MP4 fallback)
 
 ⸻
 
@@ -272,6 +273,7 @@ Ce projet met l’accent sur la composition du layout, les animations, l’inter
 	•	CSS3 (Flexbox, positioning, animations)
 	•	JavaScript (manipulation du DOM)
 	•	Variables CSS (design tokens)
+  • Format video optimisés (WebM + MP4 fallback)
 
 ⸻
 
